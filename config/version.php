@@ -8,5 +8,5 @@
  * The Initial Developer of the Original Code is YetiForce. Portions created by YetiForce are Copyright (C) www.yetiforce.com. 
  * All Rights Reserved.
  *************************************************************************************************************************************/
-$version = '1.1.0 RC';
-$patch_version = '20150109'; 
+$version = '1.2.0 RC';
+$patch_version = '20150121'; 
