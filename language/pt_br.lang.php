@@ -7,7 +7,7 @@
  * The Original Code is YetiForce.
  * The Initial Developer of the Original Code is YetiForce. Portions created by YetiForce are Copyright (C) www.yetiforce.com. 
  * All Rights Reserved.
- * Contributor(s): Valmir Carlos Trindade/Translate to Brazilian Portuguese| 09/12/2014 |Curitiba/Paraná/Brasil.|www.ttcasolucoes.com.br
+ * Contributor(s): Valmir Carlos Trindade - Brazilian Portuguese Translation - 09/01/2015 - www.ttcasolucoes.com.br
  *************************************************************************************************************************************/
 global $app_strings;
 $app_strings = Array(
@@ -108,7 +108,7 @@ $app_strings = Array(
 'LBL_FILE_HAS_NO_CONTENTS'=>'O arquivo não possui conteúdo',
 
 //Widgets
-'LBL_WIDGET_OPENTICKETS' => 'Vhamados Abertos',
+'LBL_WIDGET_OPENTICKETS' => 'Chamados Abertos',
 'LBL_WIDGET_TICKETSBYSTATUS' => 'Chamado por Status',
 'LBL_WIDGET_TICKETSSUMTIME' => 'Chamados - Tempo de trabalho dividido entre Usuários',
 'LBL_WIDGET_PROJECTSUMTIME' => 'Projetos - Tempo de trabalho dividido entre Projetos',
