@@ -43,7 +43,7 @@ $app_strings = Array(
 'LBL_INVALID_USERNAME_OR_PASSWORD' => 'NNenhum usuário com este nome foi encontrado',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'As senhas não são iguais',
 'LBL_PASSWORD_CHANGED'=>'Sua senha foi alterada.',
-
+'LBL_SEND_PASSWORD'=>'Send Password',
 //List
 'LBL_NO_RECORDS_FOUND' => 'Nenhum registro foi encontrado neste módulo',
 'LBL_NO_HELPDESK_RECORDS_FOUND' => 'Nenhum Chamado foi encontrado',
@@ -112,4 +112,7 @@ $app_strings = Array(
 'LBL_WIDGET_TICKETSBYSTATUS' => 'Chamado por Status',
 'LBL_WIDGET_TICKETSSUMTIME' => 'Chamados - Tempo de trabalho dividido entre Usuários',
 'LBL_WIDGET_PROJECTSUMTIME' => 'Projetos - Tempo de trabalho dividido entre Projetos',
+
+'The Email you Request is not in our system!' => 'The Email you Request is not in our system!',
+'We have send an Email containing your Password at the requested Address!' => 'We have send an Email containing your Password at the requested Address!',
 );
