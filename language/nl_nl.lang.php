@@ -43,7 +43,7 @@ $app_strings = Array(
 'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Geen gebruiker met deze naam bekend',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Wachtwoorden komen niet overeen',
 'LBL_PASSWORD_CHANGED'=>'Wachtwoord aangepast.',
-
+'LBL_SEND_PASSWORD'=>'Send Password',
 //List
 'LBL_NO_RECORDS_FOUND' => 'Geen informatie gevonden.',
 'LBL_NO_HELPDESK_RECORDS_FOUND' => 'Geen tickets gevonden',
@@ -112,4 +112,7 @@ $app_strings = Array(
 'LBL_WIDGET_TICKETSBYSTATUS' => 'Tickets per status',
 'LBL_WIDGET_TICKETSSUMTIME' => 'Tickets - Working time divided into users',
 'LBL_WIDGET_PROJECTSUMTIME' => 'Projects - Working time divided into projects',
+
+'The Email you Request is not in our system!' => 'The Email you Request is not in our system!',
+'We have send an Email containing your Password at the requested Address!' => 'We have send an Email containing your Password at the requested Address!',
 );
