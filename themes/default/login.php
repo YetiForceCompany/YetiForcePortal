@@ -62,7 +62,7 @@
                     </div>
                     <div class="panel-body">
 						<div class="row">
-							<img alt="Logo" class="col-md-12" title="Logo" src="images/logo.png"/>
+							<img alt="Logo" class="col-md-12" title="Logo" src="<?php echo "themes/".$currtheme; ?>/images/logo.png"/>
 						</div>
                         <form role="form" method="post" >
                             <fieldset>
