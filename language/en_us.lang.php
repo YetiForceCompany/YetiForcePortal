@@ -42,7 +42,7 @@ $app_strings = Array(
 'LBL_BTN_CHANGE_PASSWORD' => 'Change password',
 'LBL_INVALID_USERNAME_OR_PASSWORD' => 'No user with this name has been found',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Passwords do not match',
-'LBL_PASSWORD_CHANGED'=>'Password has been changed.','LBL_SEND_PASSWORD'=>'Send Password',
+'LBL_PASSWORD_CHANGED'=>'Password has been changed.',
 
 //List
 'LBL_NO_RECORDS_FOUND' => 'No records found within this module',
@@ -112,7 +112,4 @@ $app_strings = Array(
 'LBL_WIDGET_TICKETSBYSTATUS' => 'Tickets By Status',
 'LBL_WIDGET_TICKETSSUMTIME' => 'Tickets - Working time divided into users',
 'LBL_WIDGET_PROJECTSUMTIME' => 'Projects - Working time divided into projects',
-
-'The Email you Request is not in our system!' => 'The Email you Request is not in our system!',
-'We have send an Email containing your Password at the requested Address!' => 'We have send an Email containing your Password at the requested Address!',
 );

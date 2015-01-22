@@ -32,7 +32,7 @@ $app_strings = Array(
 'LBL_REQUEST_PASSWORD' => 'Passwort anfordern',
 'LBL_EMAIL'=>'E-Mail',
 'LBL_LNK_HOME'=>'Startseite',
-'LBL_SEND_PASSWORD'=>'Send Password',
+
 //Changing the password
 'LBL_LOGIN'=>'Login',
 'LBL_CHANGING_PASSWORD' => 'Passwort ändern',
@@ -112,6 +112,4 @@ $app_strings = Array(
 'LBL_WIDGET_TICKETSBYSTATUS' => 'Tickets nach Status',
 'LBL_WIDGET_TICKETSSUMTIME' => 'Tickets - Arbeitszeit nach Benutzern aufgeteilt',
 'LBL_WIDGET_PROJECTSUMTIME' => 'Projekte - Arbeitszeit in Projekte aufgeteilt',
-'The Email you Request is not in our system!' => 'The Email you Request is not in our system!',
-'We have send an Email containing your Password at the requested Address!' => 'We have send an Email containing your Password at the requested Address!',
 );
