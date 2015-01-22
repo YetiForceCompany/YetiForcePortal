@@ -35,8 +35,7 @@ $languages = Array(
 	'en_us'=>'English',
 	'pl_pl'=>'Polski',
 	'de_de'=>'Deutsch',
-	'pt_br'=>'Brazilian Portuguese',
-	'ru_ru'=>'Russian'
+	'pt_br'=>'Brazilian Portuguese'
 );
 
 //Define the default theme to apply to the portal, the theme folder should be present in the themes directory with the same name specified here
