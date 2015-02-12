@@ -62,7 +62,7 @@
                     </div>
                     <div class="panel-body">
 						<div class="row">
-							<img alt="Logo" class="col-md-12" title="Logo" src="images/logo.png"/>
+							<img alt="Logo" class="col-md-12 col-xs-12" title="Logo" src="<?php echo "themes/".$currtheme; ?>/images/logo.png"/>
 						</div>
                         <form role="form" method="post" >
                             <fieldset>
@@ -73,7 +73,6 @@
                                 <!-- Change this to a button or input when using this as a form -->
                                 <button type="submit" class="btn btn-lg btn-success btn-block"><?php echo Language::translate("LBL_SEND_PASSWORD"); ?></button>
                                 <a onclick="$('#forgotpanel').hide();$('#loginpanel').show();" class="btn btn-lg btn-warning btn-block"><?php echo Language::translate("LBL_LNK_HOME"); ?></a>
-
                             </fieldset>
                         </form>
                     </div>

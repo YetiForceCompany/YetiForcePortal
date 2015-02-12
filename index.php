@@ -15,7 +15,7 @@ require_once('lib/nusoap/lib/nusoap.php');
 require_once("portal.php");
 
 // Set session path
-ini_set('session.save_path','tmp');
+ini_set('session.save_path','sessions');
 
 //Establish the connection with the crm and store it in a global variable
 global $sclient;

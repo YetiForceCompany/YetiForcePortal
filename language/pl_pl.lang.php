@@ -44,6 +44,14 @@ $app_strings = Array(
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Wprowadzone hasłą nie są identyczne',
 'LBL_PASSWORD_CHANGED'=>'Hasło zostało zmienione.',
 
+//forgot the password
+'LBL_SEND_PASSWORD' => 'Wyślij',
+'LBL_PASSWORD_HAS_BEEN_SENT' => 'Hasło zostało wysłane, prosimy o sprawdzenie skrzynki pocztowej',
+'LBL_NO_MAIL_ADDRESS' => 'Nie wprowadzono adresu e-mail',
+'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Nie znaleziono adresu e-mail',
+'LBL_LOGIN_REVOKED' => 'Dostęp do konta został zablokowany',
+'LBL_MAIL_COULDNOT_SENT' => 'Wiadomość e mail nie mogła zostać wysłana, zgłoś administratorowi, że jest problem z konfiguracją poczty.',
+
 //List
 'LBL_NO_RECORDS_FOUND' => 'Nie znaleziono rekordów w module',
 'LBL_NO_HELPDESK_RECORDS_FOUND' => 'Nie znaleziono zgłoszeń',
