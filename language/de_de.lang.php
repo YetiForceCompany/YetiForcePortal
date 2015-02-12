@@ -43,6 +43,15 @@ $app_strings = Array(
 'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Es wurde kein Benutzer mit diesem Namen gefunden',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Passwörter stimmen nicht überein',
 'LBL_PASSWORD_CHANGED'=>'Passwort wurde geändert.',
+    
+//forgot the password
+'LBL_SEND_PASSWORD' => 'Send',
+'LBL_PASSWORD_HAS_BEEN_SENT' => 'Your password has been sent, please check your emails.',
+'LBL_NO_MAIL_ADDRESS' => 'No email address has been entered.',
+'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Email address not found',
+'LBL_LOGIN_REVOKED' => 'Account access has been blocked',
+'LBL_MAIL_COULDNOT_SENT' => 'Email could not be sent, contact your administrator to solve the configuration problem in your mailbox.',
+
 
 //List
 'LBL_NO_RECORDS_FOUND' => 'Keine Datensätze in diesem Modul gefunden',
