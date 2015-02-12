@@ -104,7 +104,10 @@ class HelpDesk extends BaseModule{
 
 		if(isset($result[0]) && count($result[0])>0 && $result[0]!="") foreach($result[0] as $key => $pick){
 			foreach($pick as $pval){
-				$picklists[$key][ $pval[0] ] = $pval[1];	
+				if($key == 'serviceid' || $key == 'servicename' )
+					$picklists[$key][] = $pval;
+				else
+					$picklists[$key][ $pval[0] ] = $pval[1];	
 			}
 		}
 		$data['picklists']=$picklists;
@@ -126,7 +129,7 @@ class HelpDesk extends BaseModule{
 			$priority = $_REQUEST['priority'];
 			$severity = $_REQUEST['severity'];
 			$category = $_REQUEST['category'];
-			$serviceid = $_REQUEST['servicename'];	
+			$serviceid = $_REQUEST['serviceid'];	
 			$projectid = $_REQUEST['projectid'];
 			$this->module = $_REQUEST['ticket_module'];	
 			$productid = $_REQUEST['productidf'];

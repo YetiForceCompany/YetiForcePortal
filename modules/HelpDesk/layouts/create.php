@@ -39,8 +39,8 @@
 					   <label for="severity"><?php echo Language::translate("LBL_HELPDESK_SEVERITY"); ?></label>
 					   <select class="form-control chosen-select" name="severity" id="severity">
 					   <?php 
-						   foreach($data['picklists']['ticketseverities'] as $count => $pid){
-							  echo  '<option value="'.$pid.'">'.Language::translate($pid).'</option>';
+						   foreach($data['picklists']['ticketseverities'] as $name => $pid){
+							  echo  '<option value="'.$name.'">'.Language::translate($pid).'</option>';
 						   }
 					   ?>
 					   </select>
@@ -49,8 +49,8 @@
 				   <label for="category"><?php echo Language::translate("LBL_HELPDESK_CATEGORY"); ?></label>
 				   <select class="form-control chosen-select" name="category" id="category">
 				   <?php 
-					   foreach($data['picklists']['ticketcategories'] as $count => $pid){
-						  echo  '<option value="'.$pid.'">'.Language::translate($pid).'</option>';
+					   foreach($data['picklists']['ticketcategories'] as $name => $pid){
+						  echo  '<option value="'.$name.'">'.Language::translate($pid).'</option>';
 					   }
 				   ?>
 				   </select>
@@ -60,9 +60,9 @@
 				   <div class="form-group">
 				   <label for="serviceid"><?php echo Language::translate("LBL_HELPDESK_CONTRACT_SERVICE"); ?></label>
 				   <select class="form-control chosen-select" name="serviceid" id="serviceid">
-				   <option value="" selected="">- - - - -</option>
+				   <option value="" >- - - - -</option>
 				   <?php 
-					   if(isset($data['picklists']['serviceid']) && isset($data['picklists']['serviceid'])) foreach($data['picklists']['serviceid'] as $count => $pid){
+					   if(isset($data['picklists']['serviceid']) && isset($data['picklists']['servicename'])) foreach($data['picklists']['serviceid'] as $count => $pid){
 						  echo  '<option value="'.$pid.'">'.Language::translate($data['picklists']['servicename'][$count]).'</option>';
 					   }
 				   ?>
@@ -73,8 +73,8 @@
 				   <label for="priority"><?php echo Language::translate("LBL_HELPDESK_PRIORITY"); ?></label>
 				   <select class="form-control chosen-select" name="priority" id="priority">
 				   <?php 
-					   foreach($data['picklists']['ticketpriorities'] as $count => $pid){
-						  echo  '<option value="'.$pid.'">'.Language::translate($pid).'</option>';
+					   foreach($data['picklists']['ticketpriorities'] as $name => $pid){
+						  echo  '<option value="'.$name.'">'.Language::translate($pid).'</option>';
 					   }
 				   ?>
 				   </select>
