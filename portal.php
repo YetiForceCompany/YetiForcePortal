@@ -149,43 +149,44 @@ class User
 			$_SESSION["portal_theme"]=$currtheme;
 			header("Location: index.php");
 		}
-		if(!isset($_SESSION['loggeduser']) || $_SESSION["loggeduser"]=="ERROR") {
-			$login=false;
-			if(isset($_REQUEST["email"]) && isset($_REQUEST["pass"])) $login=User::portal_login($_REQUEST["email"],$_REQUEST["pass"]);
-			if(isset($_REQUEST["email"]) && isset($_REQUEST["forgot"])) $lres=User::forgot_password($_REQUEST["email"]);
+		if (!isset($_SESSION['loggeduser']) || $_SESSION["loggeduser"] == "ERROR") {
+			$login = false;
+			if (isset($_REQUEST["email"]) && isset($_REQUEST["pass"]))
+				$login = self::portal_login($_REQUEST["email"], $_REQUEST["pass"]);
+			if (isset($_REQUEST["email"]) && isset($_REQUEST["forgot"]))
+				$forgotPassword = self::forgot_password($_REQUEST["email"]);
 
-			if(!$login || $login[0]=="LBL_INVALID_USERNAME_OR_PASSWORD") {
-				if($login[0]=="LBL_INVALID_USERNAME_OR_PASSWORD") $loginerror= $login[0];
-				
-				if(isset($lres) && $lres=="ERROR") $loginerror="The Email you Request is not in our system!";
-				else if(isset($lres) && $lres=="SUCCESS") $successmess="We have send an Email containing your Password at the requested Address!";
-			
-				if(file_exists("themes/".$currtheme."/login.php")) require_once("themes/".$currtheme."/login.php");
-				else require_once("themes/default/login.php"); 
-				
+			if (!$login || $login[0] == "LBL_INVALID_USERNAME_OR_PASSWORD") {
+				if ($login[0] == "LBL_INVALID_USERNAME_OR_PASSWORD")
+					$loginerror = $login[0];
+
+				if (isset($forgotPassword) && !($forgotPassword[0]))
+					$loginerror = $forgotPassword[1];
+				else if (isset($forgotPassword) && $forgotPassword[0])
+					$successmess = "LBL_PASSWORD_HAS_BEEN_SENT";
+
+				if (file_exists("themes/" . $currtheme . "/login.php"))
+					require_once("themes/" . $currtheme . "/login.php");
+				else
+					require_once("themes/default/login.php");
+
 				session_unset();
 				die();
 			}
 		}
-		else User::portal_login($_SESSION['loggeduser']['user_name'],$_SESSION['loggeduser']['user_password']);
+		else self::portal_login($_SESSION['loggeduser']['user_name'],$_SESSION['loggeduser']['user_password']);
 		if(isset($_SESSION['loggeduser']) && isset($_REQUEST['fun']) && $_REQUEST['fun']=="changepassword")
-		$GLOBALS["opresult"]=User::change_password();
+		$GLOBALS["opresult"]=self::change_password();
 	}
 
-	/*****************************************************************************
-	* Function: User::forgot_password()
-	* ****************************************************************************/
-
-	function forgot_password($email){
-	
+	/*	 * ***************************************************************************
+	 * Function: User::forgot_password()
+	 * *************************************************************************** */
+	function forgot_password($email) {
 		$params = array('email' => $email);
 		$result = $GLOBALS["sclient"]->call('send_mail_for_password', $params);
-	
-		if(strpos($result,'false')!==false) return "ERROR";
-		else return "SUCCESS";
-		
+		return $result;
 	}
-
 
 	/*****************************************************************************
 	* Function: User::portal_login()
