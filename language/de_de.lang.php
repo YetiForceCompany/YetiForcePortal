@@ -45,12 +45,12 @@ $app_strings = Array(
 'LBL_PASSWORD_CHANGED'=>'Passwort wurde geändert.',
     
 //forgot the password
-'LBL_SEND_PASSWORD' => 'Send',
-'LBL_PASSWORD_HAS_BEEN_SENT' => 'Your password has been sent, please check your emails.',
-'LBL_NO_MAIL_ADDRESS' => 'No email address has been entered.',
-'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Email address not found',
-'LBL_LOGIN_REVOKED' => 'Account access has been blocked',
-'LBL_MAIL_COULDNOT_SENT' => 'Email could not be sent, contact your administrator to solve the configuration problem in your mailbox.',
+'LBL_SEND_PASSWORD' => 'Senden',
+'LBL_PASSWORD_HAS_BEEN_SENT' => 'Ihr Passwort wurde gesendet. Bitte prüfen Sie Ihre E-Mails.',
+'LBL_NO_MAIL_ADDRESS' => 'Keine E-Mai-Adresse eingegeben.',
+'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'E-Mail-Adresse nicht gefunden',
+'LBL_LOGIN_REVOKED' => 'Zugang wurde gesperrt',
+'LBL_MAIL_COULDNOT_SENT' => 'E-Mail konnte nicht gesendet werden. Kontaktieren Sie Ihren Administrator, um Ihr Mailbox-Konfigurationsproblem zu lösen.',
 
 
 //List
