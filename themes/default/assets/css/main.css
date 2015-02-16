@@ -13,3 +13,36 @@ table.jqplot-table-legend{
 td.jqplot-table-legend{
 	
 }
+html, #wrapper{
+	background-color: #e3dbd7;
+}
+.
+.login-containter{
+	font-family: 'Calibri Light';
+}
+
+.cp-logo{
+	margin-bottom: 25px;
+}
+
+.cp-login-span{
+	background-color: white;
+}
+
+.cp-login-input{
+	border-radius: 0;
+}
+
+.btn-start{
+	background-color: #232f3c;
+	border-color: #232f3c;
+	border-radius: 0;
+	margin: 25px 0 10px 0;
+
+}
+
+.btn-start:hover{
+	background-color: #232f3c;
+	border-color: #232f3c;
+}
+
