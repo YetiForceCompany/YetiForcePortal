@@ -185,7 +185,11 @@ class User
 	function forgot_password($email) {
 		$params = array('email' => $email);
 		$result = $GLOBALS["sclient"]->call('send_mail_for_password', $params);
-		return $result;
+		if(!$result[0]){
+			return "ERROR";
+		} else {
+			return "SUCCESS";
+		}
 	}
 
 	/*****************************************************************************
@@ -203,7 +207,7 @@ class User
 			'portal_lang'=>"$portalLang"
 		);
 		$result = $GLOBALS["sclient"]->call('authenticate_user', $params);
-		//echo '<h2>request</h2><pre>' . htmlspecialchars($GLOBALS["sclient"]->response, ENT_QUOTES) . '</pre>';
+//		echo '<h2>request</h2><pre>' . htmlspecialchars($GLOBALS["sclient"]->response, ENT_QUOTES) . '</pre>';
 		if(is_array($result[0]) && isset($result[0]['id'])){ 
 			$_SESSION["loggeduser"] = $result[0];
 			$_SESSION["loggeduser"]['language'] = $portalLang;
@@ -237,8 +241,16 @@ class User
 		);
 		$result = $GLOBALS["sclient"]->call('authenticate_user',$params);
 		$sessionid = $_SESSION["loggeduser"]['sessionid'];
+		
+		$passTest = FALSE;
 
-		if(isset($result) && isset($result[0]['user_password']) && $oldpw == $result[0]['user_password'])
+		if ($result[0]['encode_password']) {
+			$passTest = (static::encryptPassword($oldpw, $customer_name) == $result[0]['user_password']);
+		} else {
+			$passTest = ($oldpw == $result[0]['user_password']);
+		}
+		
+		if(isset($result) && isset($result[0]['user_password']) && $passTest)
 		{
 			if(strcasecmp($newpw,$confirmpw) == 0)
 			{
@@ -327,6 +339,28 @@ class User
 		header("Content-Description: PHP Generated Data");
 		echo base64_decode($fileContent);
 		exit;
+	}
+	
+	public static function encryptPassword($userPassword, $userEmail) {
+
+		$salt = substr($userEmail, 0, 2);
+
+		$crypt_type = static::getCryptType();
+
+		if ($crypt_type == 'MD5') {
+			$salt = '$1$' . $salt . '$';
+		} elseif ($crypt_type == 'BLOWFISH') {
+			$salt = '$2$' . $salt . '$';
+		} elseif ($crypt_type == 'PHP5.3MD5') {
+			$salt = '$1$' . str_pad($salt, 9, '0');
+		}
+
+		$encrypted_password = crypt($userPassword, $salt);
+		return $encrypted_password;
+	}
+	
+	public static function getCryptType() {
+		return (version_compare(PHP_VERSION, '5.3.0') >= 0)? 'PHP5.3MD5': 'MD5';
 	}
 }
 class Functions
