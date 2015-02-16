@@ -258,7 +258,6 @@ class User
 				$sessionid = $_SESSION["loggeduser"]['sessionid'];
 				$params = array(array('id'=>"$customerid", 'sessionid'=>"$sessionid", 'username'=>"$customer_name",'old_password'=>"$oldpw",'new_password'=>"$newpw",'version'=>"$version"));
 				$result = $GLOBALS["sclient"]->call('change_password',$params);
-				var_dump($result);
 				$_SESSION["loggeduser"]['user_password'] = $newpw;
 				$errormsg .= $result[0];
 			}
