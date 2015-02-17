@@ -32,9 +32,11 @@ $app_strings = Array(
 'LBL_REQUEST_PASSWORD' => 'Request password',
 'LBL_EMAIL'=>'Email',
 'LBL_LNK_HOME'=>'Home page',
+'LBL_START' => 'START',
+'LBL_FORGOT_PASSWORD' => 'Forgot your password?',
 
 //Changing the password
-'LBL_LOGIN'=>'Log in',
+'LBL_LOGIN'=>'Login',
 'LBL_CHANGING_PASSWORD' => 'Change password',
 'LBL_OLD_PASSWORD'=>'Old password',
 'LBL_NEW_PASSWORD'=>'New password',

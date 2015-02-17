@@ -32,6 +32,8 @@ $app_strings = Array(
 'LBL_REQUEST_PASSWORD' => 'Przypominanie hasła',
 'LBL_EMAIL'=>'Email',
 'LBL_LNK_HOME'=>'Strona główna',
+'LBL_START' => 'START',
+'LBL_FORGOT_PASSWORD' => 'Zapomniałeś hasła?',
 
 //Changing the password
 'LBL_LOGIN'=>'Login',
