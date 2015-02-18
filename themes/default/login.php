@@ -47,7 +47,7 @@
 								</div>
 								<div class="input-group">
 									<span class="input-group-addon cp-login-span">
-										<img alt="Language icon" class="center-block" title="Language icon" src="<?php echo "themes/".$currtheme; ?>/images/poland_icon.png"/> 
+										<img alt="Language icon" class="center-block language-icon" title="Language icon" src="<?php echo "themes/".$currtheme; ?>/images/poland_icon.png"/> 
 									</span>
 									<div class="styled-select">
 										<select class="form-control input-lg cp-login-input lang-select" name="lang" required>
@@ -88,6 +88,23 @@
 			</div>
 		</div>
 	</div>
-	<script> $(function(){ $('#forgotpanel').hide(); }) </script>
+	<script>
+		$(function(){ $('#forgotpanel').hide(); })
+		var selectCountry = $('.lang-select :selected').text();
+		updateCountryImage(selectCountry);	
+
+		$('.lang-select').change(function(e) {
+			var selectCountry = $('.lang-select :selected').text();
+			updateCountryImage(selectCountry);
+		});
+
+		function updateCountryImage(selectedCountry){
+			var languages = {'English': 'english', Polski: 'poland', Deutsch: 'deutsch', Russian: 'russia', 'Brazilian Portuguese': 'brazil'};
+			var countryIcon = languages[selectedCountry];
+			console.log(countryIcon);
+			$('.language-icon').attr('src', 'themes/default/images/'+countryIcon+'.png' );
+		}
+
+	</script>
   
 <?php require_once("themes/default/footer.php"); ?>
