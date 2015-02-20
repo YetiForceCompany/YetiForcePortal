@@ -59,14 +59,14 @@
 								</div>
 								<!-- Change this to a button or input when using this as a form -->
 								<button type="submit" class="btn btn-lg btn-success btn-block btn-start"><?php echo Language::translate("LBL_START"); ?></button>
-								<p class="pull-right forgot-password" onclick="$('#loginpanel').hide();$('#forgotpanel').show();">* <?php echo Language::translate("LBL_FORGOT_PASSWORD"); ?></p>   
+								<p class="pull-right forgot-password" onclick="$('#loginpanel').hide();$('#forgotpanel').show();">* <?php echo Language::translate("LBL_FORGOT_PASSWORD"); ?></p>
 							</fieldset>
 						</form>
 					</div>
 				</div>
 				<div class="login-panel " id="forgotpanel">
 					<div class="panel-heading">
-						<h3 class="panel-title"><?php echo Language::translate("LBL_REQUEST_PASSWORD"); ?></h3>
+						<h3 class="panel-title"><?php echo Language::translate("LBL_RESET_PASSWORD"); ?></h3>
 					</div>
 					<div class="panel-body">
 						<div class="row">

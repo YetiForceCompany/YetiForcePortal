@@ -28,10 +28,11 @@ $app_strings = Array(
 'LBL_PASSWORD'=>'Пароль',
 'LBL_SIGN_IN' => 'Войти',
 'LBL_FORGOT_LOGIN'=>'Забыли пароль?',
-'LBL_REQUEST_PASSWORD' => 'Восстановление пароля',
+'LBL_RESET_PASSWORD' => 'Password reset',
 'LBL_EMAIL'=>'E-Mail',
 'LBL_LNK_HOME'=>'Назад',
 'LBL_SEND_PASSWORD'=>'Отправить пароль',
+'LBL_FORGOT_PASSWORD' => 'Forgot your password?',
 
 //Changing the password
 'LBL_CHANGING_PASSWORD' => 'Изменить пароль',
@@ -45,7 +46,6 @@ $app_strings = Array(
     
     
 //forgot the password
-'LBL_SEND_PASSWORD' => 'Send',
 'LBL_PASSWORD_HAS_BEEN_SENT' => 'Your password has been sent, please check your emails.',
 'LBL_NO_MAIL_ADDRESS' => 'No email address has been entered.',
 'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Email address not found',

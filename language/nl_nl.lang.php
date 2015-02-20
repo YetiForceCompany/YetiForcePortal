@@ -29,7 +29,7 @@ $app_strings = Array(
 'LBL_PASSWORD'=>'Wachtwoord',
 'LBL_SIGN_IN' => 'Aanmelden',
 'LBL_FORGOT_LOGIN'=>'Wachtwoord vergeten?',
-'LBL_REQUEST_PASSWORD' => 'Vraag wachtwoord op',
+'LBL_RESET_PASSWORD' => 'Password reset',
 'LBL_EMAIL'=>'Email',
 'LBL_LNK_HOME'=>'Home page',
 
@@ -43,6 +43,7 @@ $app_strings = Array(
 'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Geen gebruiker met deze naam bekend',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Wachtwoorden komen niet overeen',
 'LBL_PASSWORD_CHANGED'=>'Wachtwoord aangepast.',
+'LBL_FORGOT_PASSWORD' => 'Forgot your password?',
     
 //forgot the password
 'LBL_SEND_PASSWORD' => 'Send',
