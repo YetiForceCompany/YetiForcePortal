@@ -9,16 +9,13 @@
  * ****************************************************************************** */
 ?>
 <?php require_once("themes/default/header.php"); ?>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="login-panel panel panel-default"  id="loginpanel">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><?php echo Language::translate("LBL_SIGN_IN_TITLE"); ?></h3>
-                    </div>
-                    <div class="panel-body">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="login-panel" id="loginpanel">
+					<div class="panel-body">
 						<div class="row">
-							<img alt="Logo" class="col-md-12 col-xs-12" title="Logo" src="<?php echo "themes/".$currtheme; ?>/images/logo.png"/>
+							<img alt="Logo" class="center-block cp-logo img-responsive" title="Logo" src="<?php echo "themes/".$currtheme; ?>/images/logo.png"/>
 						</div>
 						<?php if(isset($loginerror)):  ?>
 						<div class="alert alert-danger alert-dismissible" role="alert">
@@ -32,54 +29,65 @@
 						  <?php echo Language::translate($successmess); ?>
 						</div>
 						<?php endif;  ?>
-                        <form role="form" method="post">
-                            <fieldset>
-                                <div class="form-group input-group">
-									<span class="input-group-addon">@</span>
-                                    <input class="form-control" placeholder="<?php echo Language::translate("LBL_LOGIN"); ?>" name="email" type="email" autofocus required>
-                                </div>
-                                <div class="form-group input-group">
-									<span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
-                                    <input class="form-control" placeholder="<?php echo Language::translate("LBL_PASSWORD"); ?>" name="pass" type="password" value="" required>
-                                </div>
-                                <div class="form-group">
-                                    <select class="form-control" name="lang" required>
-                                    	<?php foreach($GLOBALS['languages'] as $file => $lang) 
-                                    			echo '<option value="'.$file.'">'.$lang.'</option>';
-	                                    ?>
-                                    </select>
-                                </div>
-                                <!-- Change this to a button or input when using this as a form -->
-                                <button type="submit" class="btn btn-lg btn-success btn-block"><?php echo Language::translate("LBL_SIGN_IN"); ?></button>
-                                <a onclick="$('#loginpanel').hide();$('#forgotpanel').show();" class="btn btn-lg btn-warning btn-block"><?php echo Language::translate("LBL_FORGOT_LOGIN"); ?></a>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-                <div class="login-panel panel panel-default" id="forgotpanel">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><?php echo Language::translate("LBL_REQUEST_PASSWORD"); ?></h3>
-                    </div>
-                    <div class="panel-body">
+						<form role="form" method="post">
+							<fieldset>
+								<div class="form-group">
+									<div class="form-group input-group">
+										<span class="input-group-addon cp-login-span">
+											<img alt="Login icon" class="center-block" title="Login icon" src="<?php echo "themes/".$currtheme; ?>/images/login_icon.png"/> 
+										</span>
+										<input class="form-control input-lg cp-login-input" placeholder="<?php echo Language::translate("LBL_LOGIN"); ?>" name="email" type="email" autofocus required>
+									</div>
+								</div>
+								<div class="form-group input-group">
+									<span class="input-group-addon cp-login-span">
+										<img alt="Password icon" class="center-block" title="Password icon" src="<?php echo "themes/".$currtheme; ?>/images/password_icon.png"/> 
+									</span>
+									<input class="form-control input-lg cp-login-input" placeholder="<?php echo Language::translate("LBL_PASSWORD"); ?>" name="pass" type="password" value="" required>
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon cp-login-span">
+										<img alt="Language icon" class="center-block" title="Language icon" src="<?php echo "themes/".$currtheme; ?>/images/poland_icon.png"/> 
+									</span>
+									<div class="styled-select">
+										<select class="form-control input-lg cp-login-input lang-select" name="lang" required>
+											<?php foreach($GLOBALS['languages'] as $file => $lang) 
+													echo '<option value="'.$file.'">'.$lang.'</option>';
+											?>
+										</select>
+									</div>
+								</div>
+								<!-- Change this to a button or input when using this as a form -->
+								<button type="submit" class="btn btn-lg btn-success btn-block btn-start"><?php echo Language::translate("LBL_START"); ?></button>
+								<p class="pull-right forgot-password" onclick="$('#loginpanel').hide();$('#forgotpanel').show();">* <?php echo Language::translate("LBL_FORGOT_PASSWORD"); ?></p>   
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="login-panel " id="forgotpanel">
+					<div class="panel-heading">
+						<h3 class="panel-title"><?php echo Language::translate("LBL_REQUEST_PASSWORD"); ?></h3>
+					</div>
+					<div class="panel-body">
 						<div class="row">
-							<img alt="Logo" class="col-md-12 col-xs-12" title="Logo" src="<?php echo "themes/".$currtheme; ?>/images/logo.png"/>
+							<img alt="Logo" class="center-block cp-logo" title="Logo" src="<?php echo "themes/".$currtheme; ?>/images/logo.png"/>
 						</div>
-                        <form role="form" method="post" >
-                            <fieldset>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="<?php echo Language::translate("LBL_EMAIL"); ?>" name="email" type="email" autofocus required>
-                                    <input name="forgot" type="hidden" value="1" >
-                                </div>
-                                <!-- Change this to a button or input when using this as a form -->
-                                <button type="submit" class="btn btn-lg btn-success btn-block"><?php echo Language::translate("LBL_SEND_PASSWORD"); ?></button>
-                                <a onclick="$('#forgotpanel').hide();$('#loginpanel').show();" class="btn btn-lg btn-warning btn-block"><?php echo Language::translate("LBL_LNK_HOME"); ?></a>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script> $(function(){ $('#forgotpanel').hide(); }) </script>
+						<form role="form" method="post" >
+							<fieldset>
+								<div class="form-group">
+									<input class="form-control" placeholder="<?php echo Language::translate("LBL_EMAIL"); ?>" name="email" type="email" autofocus required>
+									<input name="forgot" type="hidden" value="1" >
+								</div>
+								<!-- Change this to a button or input when using this as a form -->
+								<button type="submit" class="btn btn-lg btn-success btn-block"><?php echo Language::translate("LBL_SEND_PASSWORD"); ?></button>
+								<a onclick="$('#forgotpanel').hide();$('#loginpanel').show();" class="btn btn-lg btn-warning btn-block"><?php echo Language::translate("LBL_LNK_HOME"); ?></a>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script> $(function(){ $('#forgotpanel').hide(); }) </script>
   
 <?php require_once("themes/default/footer.php"); ?>

@@ -13,3 +13,61 @@ table.jqplot-table-legend{
 td.jqplot-table-legend{
 	
 }
+html, #wrapper{
+	background-color: #e3dbd7;
+}
+
+#loginpanel {
+	font-family: 'Calibri Light';
+}
+
+
+.cp-logo{
+	margin-bottom: 15px;
+}
+
+.cp-login-span{
+	background-color: white;
+}
+
+.cp-login-input{
+	border-radius: 0;
+	color:#969ba2;
+}
+
+.cp-login-input::-webkit-input-placeholder, 
+.cp-login-input::-moz-placeholder,
+.cp-login-input:-ms-input-placeholder{
+	color:#969ba2;
+}
+
+.lang-select {
+	background: url(../../images/arrow.png) no-repeat  97% 50%;
+	background-color: white !important;
+	text-indent: 0.01px;
+	padding: 0 0 0 16px;
+	text-overflow: '';
+	-moz-appearance: none;
+	-webkit-appearance: none; 
+  	
+}
+
+.btn-start{
+	background-color: #232f3c;
+	border-color: #232f3c;
+	border-radius: 0;
+	margin: 15px 0 15px 0;
+
+}
+
+.btn-start:hover,
+.btn-start:active,
+.btn-start:focus{
+	background-color: #232f3c;
+	border-color: #232f3c;
+}
+
+.forgot-password{
+	color: #232f3c;
+	cursor: pointer;
+}
