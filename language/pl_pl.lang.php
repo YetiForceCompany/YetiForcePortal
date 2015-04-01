@@ -40,7 +40,7 @@ $app_strings = Array(
 'LBL_OLD_PASSWORD'=>'Stare hasło',
 'LBL_NEW_PASSWORD'=>'Nowe hasło',
 'LBL_CONFIRM_PASSWORD'=>'Potwierdź hasło',
-'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Nie znaleziono użytkownika o takiej nazwie',
+'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Nieprawidłowe hasło lub nazwa użytkownika.',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Wprowadzone hasłą nie są identyczne',
 'LBL_PASSWORD_CHANGED'=>'Hasło zostało zmienione.',
 

@@ -39,7 +39,7 @@ $app_strings = Array(
 'LBL_OLD_PASSWORD'=>'Senha antiga',
 'LBL_NEW_PASSWORD'=>'Nova senha',
 'LBL_CONFIRM_PASSWORD'=>'Confirmar senha',
-'LBL_INVALID_USERNAME_OR_PASSWORD' => 'NNenhum usuário com este nome foi encontrado',
+	'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Invalid password or username.',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'As senhas não são iguais',
 'LBL_PASSWORD_CHANGED'=>'Sua senha foi alterada.',
     

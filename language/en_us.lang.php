@@ -42,7 +42,7 @@ $app_strings = Array(
 'LBL_NEW_PASSWORD'=>'New password',
 'LBL_CONFIRM_PASSWORD'=>'Confirm password',
 'LBL_BTN_CHANGE_PASSWORD' => 'Change password',
-'LBL_INVALID_USERNAME_OR_PASSWORD' => 'No user with this name has been found',
+	'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Invalid password or username.',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Passwords do not match',
 'LBL_PASSWORD_CHANGED'=>'Password has been changed.',
     

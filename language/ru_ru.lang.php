@@ -40,7 +40,7 @@ $app_strings = Array(
 'LBL_NEW_PASSWORD'=>'Новый пароль',
 'LBL_CONFIRM_PASSWORD'=>'Повтор пароля',
 'LBL_BTN_CHANGE_PASSWORD' => 'Изменить пароль',
-'LBL_INVALID_USERNAME_OR_PASSWORD' => 'E-Mail не зарегистрирован в системе',
+	'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Invalid password or username.',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Пароли не совпадают',
 'LBL_PASSWORD_CHANGED'=>'Пароль успешно изменен.',
     
