@@ -32,6 +32,7 @@ $app_strings = Array(
 'LBL_RESET_PASSWORD' => 'Password reset',
 'LBL_EMAIL'=>'Email',
 'LBL_LNK_HOME'=>'Home page',
+'LBL_SELECT_LANGUAGE' => 'Select language',
 
 //Changing the password
 'LBL_LOGIN'=>'Log in',

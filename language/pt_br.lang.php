@@ -33,6 +33,7 @@ $app_strings = Array(
 'LBL_EMAIL'=>'Email',
 'LBL_LNK_HOME'=>'Principal',
 'LBL_FORGOT_PASSWORD' => 'Forgot your password?',
+'LBL_SELECT_LANGUAGE' => 'Select language',
 
 //Changing the password
 'LBL_CHANGING_PASSWORD' => 'Mudar senha',

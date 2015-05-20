@@ -36,21 +36,21 @@
 										<span class="input-group-addon cp-login-span">
 											<img alt="Login icon" class="center-block" title="Login icon" src="<?php echo "themes/".$currtheme; ?>/images/login_icon.png"/> 
 										</span>
-										<input class="form-control input-lg cp-login-input" placeholder="<?php echo Language::translate("LBL_LOGIN"); ?>" name="email" type="email" autofocus required>
+										<input class="form-control input-lg cp-login-input" title="<?php echo Language::translate("LBL_LOGIN"); ?>" placeholder="<?php echo Language::translate("LBL_LOGIN"); ?>" name="email" type="email" autofocus required>
 									</div>
 								</div>
 								<div class="form-group input-group">
 									<span class="input-group-addon cp-login-span">
 										<img alt="Password icon" class="center-block" title="Password icon" src="<?php echo "themes/".$currtheme; ?>/images/password_icon.png"/> 
 									</span>
-									<input class="form-control input-lg cp-login-input" placeholder="<?php echo Language::translate("LBL_PASSWORD"); ?>" name="pass" type="password" value="" required>
+									<input class="form-control input-lg cp-login-input" title="<?php echo Language::translate("LBL_LOGIN"); ?>" placeholder="<?php echo Language::translate("LBL_PASSWORD"); ?>" name="pass" type="password" value="" required>
 								</div>
 								<div class="input-group">
 									<span class="input-group-addon cp-login-span">
 										<img alt="Language icon" class="center-block language-icon" title="Language icon" src="<?php echo "themes/".$currtheme; ?>/images/poland_icon.png"/> 
 									</span>
 									<div class="styled-select">
-										<select class="form-control input-lg cp-login-input lang-select" name="lang" required>
+										<select class="form-control input-lg cp-login-input lang-select" title="<?php echo Language::translate("LBL_SELECT_LANGUAGE"); ?>" name="lang" required>
 											<?php foreach($GLOBALS['languages'] as $file => $lang) 
 													echo '<option value="'.$file.'">'.$lang.'</option>';
 											?>

@@ -34,6 +34,7 @@ $app_strings = Array(
 'LBL_LNK_HOME'=>'Home page',
 'LBL_START' => 'START',
 'LBL_FORGOT_PASSWORD' => 'Forgot your password?',
+'LBL_SELECT_LANGUAGE' => 'Select language',
 
 //Changing the password
 'LBL_LOGIN'=>'Login',
