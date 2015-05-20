@@ -24,7 +24,7 @@
 			<table class="table">
 				<?php
 					foreach($tblocks as $field){
-						echo "<tr><td><b>".$field['label'].": </b></td><td>".$field['value']."</td></tr>";
+						echo "<tr><td><strong>".$field['label'].": </strong></td><td>".$field['value']."</td></tr>";
 					}
 				?>
 			</table>
@@ -50,7 +50,7 @@
 					<?php foreach($data['products'] as $key => $field){ $count = $key+1; 
 					?>
 					<tr>
-						<td><b><?php echo $field['productName'.$count]; ?></b></td>
+						<td><strong><?php echo $field['productName'.$count]; ?></strong></td>
 						<td><?php echo $field['qty'.$count]; ?></td>
 						<td><?php echo $field['listPrice'.$count]; ?></td>
 						<td><?php echo $field['taxTotal'.$count]; ?></td>
