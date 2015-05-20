@@ -56,7 +56,7 @@
 			   <?php if($data['ticket_status']!="Closed"): ?> 
 				<a href="index.php?module=HelpDesk&action=index&fun=close_ticket&id=<?php echo $data['ticketid']; ?>">
 					<div class="panel-footer text-center">
-						<b><?php echo Language::translate("LBL_HELPDESK_CLOSE_TICKET"); ?></b>
+						<strong><?php echo Language::translate("LBL_HELPDESK_CLOSE_TICKET"); ?></strong>
 						<div class="clearfix"></div>
 					</div>
 				</a>
@@ -105,7 +105,7 @@
 				<table class="table">
 					<?php
 						foreach($tblocks as $field){
-							echo "<tr><td class='col-lg-5'><b>".$field['label'].": </b></td><td>".$field['value']."</td></tr>";
+							echo "<tr><td class='col-lg-5'><strong>".$field['label'].": </strong></td><td>".$field['value']."</td></tr>";
 						}
 					?>
 				</table>
@@ -120,7 +120,7 @@
 		<div class="col-lg-12">
 		<div class="chat-panel panel panel-default">
 				<div class="panel-heading">
-					<i class="fa fa-comments fa-fw"></i>
+					<span class="fa fa-comments fa-fw"></span>
 					<?php echo Language::translate("LBL_HELPDESK_COMMENTS"); ?>
 				</div>
 				<!-- /.panel-heading -->
@@ -132,7 +132,7 @@
 								<div class="header">
 									<strong class="primary-font"><?php echo $comment['owner']; ?></strong> 
 									<small class="pull-right text-muted">
-										<i class="fa fa-clock-o fa-fw"></i> <?php echo $comment['createdtime']; ?>
+										<span class="fa fa-clock-o fa-fw"></span> <?php echo $comment['createdtime']; ?>
 									</small>
 								</div>
 								<p>
