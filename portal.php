@@ -244,11 +244,7 @@ class User
 		
 		$passTest = FALSE;
 
-		if ($result[0]['encode_password']) {
-			$passTest = (static::encryptPassword($oldpw, $customer_name) == $result[0]['user_password']);
-		} else {
-			$passTest = ($oldpw == $result[0]['user_password']);
-		}
+		$passTest = (static::encryptPassword($oldpw, $customer_name) == $result[0]['user_password']);
 		
 		if(isset($result) && isset($result[0]['user_password']) && $passTest)
 		{

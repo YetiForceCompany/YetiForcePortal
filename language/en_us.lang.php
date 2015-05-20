@@ -29,11 +29,12 @@ $app_strings = Array(
 'LBL_PASSWORD'=>'Password',
 'LBL_SIGN_IN' => 'Sign In',
 'LBL_FORGOT_LOGIN'=>'Forgotten your password?',
-'LBL_REQUEST_PASSWORD' => 'Request password',
+'LBL_RESET_PASSWORD' => 'Password reset',
 'LBL_EMAIL'=>'Email',
 'LBL_LNK_HOME'=>'Home page',
 'LBL_START' => 'START',
 'LBL_FORGOT_PASSWORD' => 'Forgot your password?',
+'LBL_SELECT_LANGUAGE' => 'Select language',
 
 //Changing the password
 'LBL_LOGIN'=>'Login',
@@ -42,7 +43,7 @@ $app_strings = Array(
 'LBL_NEW_PASSWORD'=>'New password',
 'LBL_CONFIRM_PASSWORD'=>'Confirm password',
 'LBL_BTN_CHANGE_PASSWORD' => 'Change password',
-'LBL_INVALID_USERNAME_OR_PASSWORD' => 'No user with this name has been found',
+	'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Invalid password or username.',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Passwords do not match',
 'LBL_PASSWORD_CHANGED'=>'Password has been changed.',
     
@@ -117,6 +118,8 @@ $app_strings = Array(
 'LBL_UPLOAD_FILE_LARGE'=>'Upload file is too large',
 'LBL_PROBLEM_UPLOAD'=>'Error sending file',
 'LBL_FILE_HAS_NO_CONTENTS'=>'File does not contain content',
+'LBL_ADD_ATTACHMENT' => 'Add attachment',
+'LBL_COMMENT_AREA' => 'Comment area',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Open Tickets',

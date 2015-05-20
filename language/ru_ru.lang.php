@@ -28,10 +28,12 @@ $app_strings = Array(
 'LBL_PASSWORD'=>'Пароль',
 'LBL_SIGN_IN' => 'Войти',
 'LBL_FORGOT_LOGIN'=>'Забыли пароль?',
-'LBL_REQUEST_PASSWORD' => 'Восстановление пароля',
+'LBL_RESET_PASSWORD' => 'Password reset',
 'LBL_EMAIL'=>'E-Mail',
 'LBL_LNK_HOME'=>'Назад',
 'LBL_SEND_PASSWORD'=>'Отправить пароль',
+'LBL_FORGOT_PASSWORD' => 'Forgot your password?',
+'LBL_SELECT_LANGUAGE' => 'Select language',
 
 //Changing the password
 'LBL_CHANGING_PASSWORD' => 'Изменить пароль',
@@ -39,18 +41,17 @@ $app_strings = Array(
 'LBL_NEW_PASSWORD'=>'Новый пароль',
 'LBL_CONFIRM_PASSWORD'=>'Повтор пароля',
 'LBL_BTN_CHANGE_PASSWORD' => 'Изменить пароль',
-'LBL_INVALID_USERNAME_OR_PASSWORD' => 'E-Mail не зарегистрирован в системе',
+	'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Invalid password or username.',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Пароли не совпадают',
 'LBL_PASSWORD_CHANGED'=>'Пароль успешно изменен.',
     
     
 //forgot the password
-'LBL_SEND_PASSWORD' => 'Отправить',
-'LBL_PASSWORD_HAS_BEEN_SENT' => 'Пароль отправлен на указанный адрес электронной почты',
-'LBL_NO_MAIL_ADDRESS' => 'Введите адрес электронной почты',
-'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Нет такого адреса электронной почты',
-'LBL_LOGIN_REVOKED' => 'Доступ заблокирован',
-'LBL_MAIL_COULDNOT_SENT' => 'Письмо не может быть отправлено, обратитесь к Вашему системному администратору.',
+'LBL_PASSWORD_HAS_BEEN_SENT' => 'Your password has been sent, please check your emails.',
+'LBL_NO_MAIL_ADDRESS' => 'No email address has been entered.',
+'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Email address not found',
+'LBL_LOGIN_REVOKED' => 'Account access has been blocked',
+'LBL_MAIL_COULDNOT_SENT' => 'Email could not be sent, contact your administrator to solve the configuration problem in your mailbox.',
 
 
 //List
@@ -115,6 +116,8 @@ $app_strings = Array(
 'LBL_UPLOAD_FILE_LARGE'=>'Загружаемый файл, слишком большой',
 'LBL_PROBLEM_UPLOAD'=>'Ошибка загрузки файла',
 'LBL_FILE_HAS_NO_CONTENTS'=>'Файл не имеет содержимого',
+'LBL_ADD_ATTACHMENT' => 'Add attachment',
+'LBL_COMMENT_AREA' => 'Comment area',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Открытые Заявки',

@@ -29,9 +29,10 @@ $app_strings = Array(
 'LBL_PASSWORD'=>'Wachtwoord',
 'LBL_SIGN_IN' => 'Aanmelden',
 'LBL_FORGOT_LOGIN'=>'Wachtwoord vergeten?',
-'LBL_REQUEST_PASSWORD' => 'Vraag wachtwoord op',
+'LBL_RESET_PASSWORD' => 'Password reset',
 'LBL_EMAIL'=>'Email',
 'LBL_LNK_HOME'=>'Home page',
+'LBL_SELECT_LANGUAGE' => 'Select language',
 
 //Changing the password
 'LBL_LOGIN'=>'Log in',
@@ -40,9 +41,10 @@ $app_strings = Array(
 'LBL_NEW_PASSWORD'=>'Nieuwe wachtwoord',
 'LBL_CONFIRM_PASSWORD'=>'Bevestig wachtwoord',
 'LBL_BTN_CHANGE_PASSWORD' => 'Verander wachtwoord',
-'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Geen gebruiker met deze naam bekend',
+	'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Invalid password or username.',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Wachtwoorden komen niet overeen',
 'LBL_PASSWORD_CHANGED'=>'Wachtwoord aangepast.',
+'LBL_FORGOT_PASSWORD' => 'Forgot your password?',
     
 //forgot the password
 'LBL_SEND_PASSWORD' => 'Send',
@@ -115,6 +117,8 @@ $app_strings = Array(
 'LBL_UPLOAD_FILE_LARGE'=>'Upload bestand is te groot',
 'LBL_PROBLEM_UPLOAD'=>'Fout tijdens het versturen van het bestand',
 'LBL_FILE_HAS_NO_CONTENTS'=>'Bestand heeft geen inhoud',
+'LBL_ADD_ATTACHMENT' => 'Add attachment',
+'LBL_COMMENT_AREA' => 'Comment area',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Open Tickets',

@@ -36,21 +36,21 @@
 										<span class="input-group-addon cp-login-span">
 											<img alt="Login icon" class="center-block" title="Login icon" src="<?php echo "themes/".$currtheme; ?>/images/login_icon.png"/> 
 										</span>
-										<input class="form-control input-lg cp-login-input" placeholder="<?php echo Language::translate("LBL_LOGIN"); ?>" name="email" type="email" autofocus required>
+										<input class="form-control input-lg cp-login-input" title="<?php echo Language::translate("LBL_LOGIN"); ?>" placeholder="<?php echo Language::translate("LBL_LOGIN"); ?>" name="email" type="email" autofocus required>
 									</div>
 								</div>
 								<div class="form-group input-group">
 									<span class="input-group-addon cp-login-span">
 										<img alt="Password icon" class="center-block" title="Password icon" src="<?php echo "themes/".$currtheme; ?>/images/password_icon.png"/> 
 									</span>
-									<input class="form-control input-lg cp-login-input" placeholder="<?php echo Language::translate("LBL_PASSWORD"); ?>" name="pass" type="password" value="" required>
+									<input class="form-control input-lg cp-login-input" title="<?php echo Language::translate("LBL_LOGIN"); ?>" placeholder="<?php echo Language::translate("LBL_PASSWORD"); ?>" name="pass" type="password" value="" required>
 								</div>
 								<div class="input-group">
 									<span class="input-group-addon cp-login-span">
-										<img alt="Language icon" class="center-block" title="Language icon" src="<?php echo "themes/".$currtheme; ?>/images/poland_icon.png"/> 
+										<img alt="Language icon" class="center-block language-icon" title="Language icon" src="<?php echo "themes/".$currtheme; ?>/images/poland_icon.png"/> 
 									</span>
 									<div class="styled-select">
-										<select class="form-control input-lg cp-login-input lang-select" name="lang" required>
+										<select class="form-control input-lg cp-login-input lang-select" title="<?php echo Language::translate("LBL_SELECT_LANGUAGE"); ?>" name="lang" required>
 											<?php foreach($GLOBALS['languages'] as $file => $lang) 
 													echo '<option value="'.$file.'">'.$lang.'</option>';
 											?>
@@ -59,14 +59,14 @@
 								</div>
 								<!-- Change this to a button or input when using this as a form -->
 								<button type="submit" class="btn btn-lg btn-success btn-block btn-start"><?php echo Language::translate("LBL_START"); ?></button>
-								<p class="pull-right forgot-password" onclick="$('#loginpanel').hide();$('#forgotpanel').show();">* <?php echo Language::translate("LBL_FORGOT_PASSWORD"); ?></p>   
+								<p class="pull-right forgot-password" onclick="$('#loginpanel').hide();$('#forgotpanel').show();">* <?php echo Language::translate("LBL_FORGOT_PASSWORD"); ?></p>
 							</fieldset>
 						</form>
 					</div>
 				</div>
 				<div class="login-panel " id="forgotpanel">
 					<div class="panel-heading">
-						<h3 class="panel-title"><?php echo Language::translate("LBL_REQUEST_PASSWORD"); ?></h3>
+						<h3 class="panel-title"><?php echo Language::translate("LBL_RESET_PASSWORD"); ?></h3>
 					</div>
 					<div class="panel-body">
 						<div class="row">
@@ -75,7 +75,7 @@
 						<form role="form" method="post" >
 							<fieldset>
 								<div class="form-group">
-									<input class="form-control" placeholder="<?php echo Language::translate("LBL_EMAIL"); ?>" name="email" type="email" autofocus required>
+									<input class="form-control" placeholder="<?php echo Language::translate("LBL_EMAIL"); ?>" title="<?php echo Language::translate("LBL_EMAIL"); ?>"  name="email" type="email" autofocus required>
 									<input name="forgot" type="hidden" value="1" >
 								</div>
 								<!-- Change this to a button or input when using this as a form -->
@@ -88,6 +88,23 @@
 			</div>
 		</div>
 	</div>
-	<script> $(function(){ $('#forgotpanel').hide(); }) </script>
+	<script>
+		$(function(){ $('#forgotpanel').hide(); })
+		var selectCountry = $('.lang-select :selected').text();
+		updateCountryImage(selectCountry);	
+
+		$('.lang-select').change(function(e) {
+			var selectCountry = $('.lang-select :selected').text();
+			updateCountryImage(selectCountry);
+		});
+
+		function updateCountryImage(selectedCountry){
+			var languages = {'English': 'english', Polski: 'poland', Deutsch: 'deutsch', Russian: 'russia', 'Brazilian Portuguese': 'brazil'};
+			var countryIcon = languages[selectedCountry];
+			console.log(countryIcon);
+			$('.language-icon').attr('src', 'themes/default/images/'+countryIcon+'.png' );
+		}
+
+	</script>
   
 <?php require_once("themes/default/footer.php"); ?>

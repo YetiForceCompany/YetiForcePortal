@@ -29,20 +29,19 @@ $app_strings = Array(
 'LBL_PASSWORD'=>'Hasło',
 'LBL_SIGN_IN' => 'Zaloguj',
 'LBL_FORGOT_LOGIN'=>'Przypomnij hasło?',
-'LBL_REQUEST_PASSWORD' => 'Przypominanie hasła',
+'LBL_RESET_PASSWORD' => 'Resetowanie hasła',
 'LBL_EMAIL'=>'Email',
 'LBL_LNK_HOME'=>'Strona główna',
 'LBL_START' => 'START',
 'LBL_FORGOT_PASSWORD' => 'Zapomniałeś hasła?',
+'LBL_SELECT_LANGUAGE' => 'Wybierz język',
 
 //Changing the password
-'LBL_LOGIN'=>'Login',
 'LBL_CHANGING_PASSWORD' => 'Zmiana hasła',
 'LBL_OLD_PASSWORD'=>'Stare hasło',
 'LBL_NEW_PASSWORD'=>'Nowe hasło',
 'LBL_CONFIRM_PASSWORD'=>'Potwierdź hasło',
-'LBL_BTN_CHANGE_PASSWORD' => 'Zmień hasło',
-'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Nie znaleziono użytkownika o takiej nazwie',
+'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Nieprawidłowe hasło lub nazwa użytkownika.',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Wprowadzone hasłą nie są identyczne',
 'LBL_PASSWORD_CHANGED'=>'Hasło zostało zmienione.',
 
@@ -116,6 +115,8 @@ $app_strings = Array(
 'LBL_UPLOAD_FILE_LARGE'=>'Załączany plik jest za duży',
 'LBL_PROBLEM_UPLOAD'=>'Błąd podczas wysyłania pliku',
 'LBL_FILE_HAS_NO_CONTENTS'=>'Plik nie zawiera zawartości',
+'LBL_ADD_ATTACHMENT' => 'Dodaj Załącznik',
+'LBL_COMMENT_AREA' => 'Miejsce na komentarz',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Otwarte zgłoszenia',

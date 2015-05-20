@@ -24,7 +24,7 @@
 			<table class="table">
 				<?php
 					foreach($tblocks as $field){
-						echo "<tr><td><b>".$field['label'].": </b></td><td>".$field['value']."</td></tr>";
+						echo "<tr><td><strong>".$field['label'].": </strong></td><td>".$field['value']."</td></tr>";
 					}
 				?>
 			</table>
