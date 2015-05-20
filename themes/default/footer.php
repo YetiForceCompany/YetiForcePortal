@@ -21,7 +21,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only"><?php echo Language::translate("LBL_CLOSE"); ?></span></button>
-        <h4 class="modal-title" id="changePassModalLabel"><?php echo Language::translate("LBL_CHANGING_PASSWORD"); ?></h4>
+        <p class="modal-title" id="changePassModalLabel"><?php echo Language::translate("LBL_CHANGING_PASSWORD"); ?></p>
       </div>
       <div class="modal-body">
       <?php 

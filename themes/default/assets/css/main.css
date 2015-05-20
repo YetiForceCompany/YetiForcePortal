@@ -71,3 +71,7 @@ html, #wrapper{
 	color: #232f3c;
 	cursor: pointer;
 }
+
+#changePassModalLabel{
+	font-size: 22px;
+}
