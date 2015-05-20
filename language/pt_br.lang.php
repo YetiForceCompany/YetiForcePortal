@@ -42,17 +42,17 @@ $app_strings = Array(
 'LBL_NEW_PASSWORD'=>'Nova senha',
 'LBL_CONFIRM_PASSWORD'=>'Confirmar senha',
 'LBL_BTN_CHANGE_PASSWORD' => 'Mudar senha',
-'LBL_INVALID_USERNAME_OR_PASSWORD' => 'NNenhum usuário com este nome foi encontrado',
+'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Nenhum usuário com este nome foi encontrado',
 'LBL_ENTER_NEW_PASSWORDS_SAME' => 'As senhas não são iguais',
 'LBL_PASSWORD_CHANGED'=>'Sua senha foi alterada.',
     
 //forgot the password
-'LBL_SEND_PASSWORD' => 'Send',
-'LBL_PASSWORD_HAS_BEEN_SENT' => 'Your password has been sent, please check your emails.',
-'LBL_NO_MAIL_ADDRESS' => 'No email address has been entered.',
-'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Email address not found',
-'LBL_LOGIN_REVOKED' => 'Account access has been blocked',
-'LBL_MAIL_COULDNOT_SENT' => 'Email could not be sent, contact your administrator to solve the configuration problem in your mailbox.',
+'LBL_SEND_PASSWORD' => 'Enviar',
+'LBL_PASSWORD_HAS_BEEN_SENT' => 'Sua senha foi enviada, por favor, verifique seu e-mail.',
+'LBL_NO_MAIL_ADDRESS' => 'Nenhum endereço de e-mail foi digitado.',
+'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'E-mail não encontrado',
+'LBL_LOGIN_REVOKED' => 'Sua Conta foi bloqueada',
+'LBL_MAIL_COULDNOT_SENT' => 'O e-mail não pode ser enviado, entre em contato com o Administrador para resolver o problema de configuração em sua caixa de entrada.',
 
 
 //List
@@ -115,7 +115,7 @@ $app_strings = Array(
 
 'LBL_NOTSET_UPLOAD_DIR' => 'Nenhum diretório temporário "upload_dir"',
 'LBL_UPLOAD_FILE_LARGE'=>'O arquivo para transferência é muito grande',
-'LBL_PROBLEM_UPLOAD'=>'Erro ao enjviar o arquivo',
+'LBL_PROBLEM_UPLOAD'=>'Erro ao enviar o arquivo',
 'LBL_FILE_HAS_NO_CONTENTS'=>'O arquivo não possui conteúdo',
 
 //Widgets
