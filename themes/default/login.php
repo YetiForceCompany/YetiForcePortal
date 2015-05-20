@@ -75,7 +75,7 @@
 						<form role="form" method="post" >
 							<fieldset>
 								<div class="form-group">
-									<input class="form-control" placeholder="<?php echo Language::translate("LBL_EMAIL"); ?>" name="email" type="email" autofocus required>
+									<input class="form-control" placeholder="<?php echo Language::translate("LBL_EMAIL"); ?>" title="<?php echo Language::translate("LBL_EMAIL"); ?>"  name="email" type="email" autofocus required>
 									<input name="forgot" type="hidden" value="1" >
 								</div>
 								<!-- Change this to a button or input when using this as a form -->
