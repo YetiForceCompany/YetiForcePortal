@@ -115,6 +115,8 @@ $app_strings = Array(
 'LBL_UPLOAD_FILE_LARGE'=>'Załączany plik jest za duży',
 'LBL_PROBLEM_UPLOAD'=>'Błąd podczas wysyłania pliku',
 'LBL_FILE_HAS_NO_CONTENTS'=>'Plik nie zawiera zawartości',
+'LBL_ADD_ATTACHMENT' => 'Dodaj Załącznik',
+'LBL_COMMENT_AREA' => 'Miejsce na komentarz',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Otwarte zgłoszenia',

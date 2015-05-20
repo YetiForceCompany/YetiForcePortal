@@ -115,6 +115,8 @@ $app_strings = Array(
 'LBL_UPLOAD_FILE_LARGE'=>'Upload-Datei zu groß',
 'LBL_PROBLEM_UPLOAD'=>'Fehler beim Senden der Datei',
 'LBL_FILE_HAS_NO_CONTENTS'=>'Datei hat keinen Inhalt',
+'LBL_ADD_ATTACHMENT' => 'Add attachment',
+'LBL_COMMENT_AREA' => 'Comment area',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Offene Tickets',

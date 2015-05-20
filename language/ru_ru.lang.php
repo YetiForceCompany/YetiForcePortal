@@ -116,6 +116,8 @@ $app_strings = Array(
 'LBL_UPLOAD_FILE_LARGE'=>'Загружаемый файл, слишком большой',
 'LBL_PROBLEM_UPLOAD'=>'Ошибка загрузки файла',
 'LBL_FILE_HAS_NO_CONTENTS'=>'Файл не имеет содержимого',
+'LBL_ADD_ATTACHMENT' => 'Add attachment',
+'LBL_COMMENT_AREA' => 'Comment area',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Открытые Заявки',

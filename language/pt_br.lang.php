@@ -115,6 +115,8 @@ $app_strings = Array(
 'LBL_UPLOAD_FILE_LARGE'=>'O arquivo para transferência é muito grande',
 'LBL_PROBLEM_UPLOAD'=>'Erro ao enjviar o arquivo',
 'LBL_FILE_HAS_NO_CONTENTS'=>'O arquivo não possui conteúdo',
+'LBL_ADD_ATTACHMENT' => 'Add attachment',
+'LBL_COMMENT_AREA' => 'Comment area',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Chamados Abertos',

@@ -83,7 +83,7 @@
 						<input type="hidden" name="id" value="<?php echo (int) $data['ticketid'];?>">
 						<input type="hidden" name="customerfile_hidden"/>
 						<div class="input-group">
-							<input id="btn-input" type="file" name="customerfile" class="form-control input-sm" placeholder="<?php echo Language::translate("LBL_HELPDESK_UPLOAD"); ?>..." onchange="validateFilename(this)" >
+							<input id="btn-input" type="file" title="<?php echo Language::translate("LBL_ADD_ATTACHMENT"); ?>" name="customerfile" class="form-control input-sm" placeholder="<?php echo Language::translate("LBL_HELPDESK_UPLOAD"); ?>..." onchange="validateFilename(this)" >
 							<span class="input-group-btn">
 								<button class="btn btn-warning btn-sm" id="btn-chat" type="submit">
 									<?php echo Language::translate("LBL_HELPDESK_UPLOAD"); ?>
@@ -151,7 +151,7 @@
 					<input type="hidden" name="action" value="index">
 					<input type="hidden" name="fun" value="updatecomment">
 					<input type="hidden" name="id" value='<?php echo $data['ticketid']; ?>'>
-					<textarea name="comments" rows="5" class="form-control input-sm" ></textarea>
+					<textarea name="comments" title="<?php echo Language::translate("LBL_COMMENT_AREA"); ?>"  rows="5" class="form-control input-sm" ></textarea>
 					<br>
 					<input class="btn btn-warning btn-sm" title="Send Comment" accesskey="S"  name="submit" value="<?php echo Language::translate("LBL_HELPDESK_SEND_COMMENT"); ?>" type="submit" onclick="if(trim(this.form.comments.value) != '') return true; else return false;" />
 				</form>
