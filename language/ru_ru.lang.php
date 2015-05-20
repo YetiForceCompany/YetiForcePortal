@@ -45,12 +45,12 @@ $app_strings = Array(
     
     
 //forgot the password
-'LBL_SEND_PASSWORD' => 'Send',
-'LBL_PASSWORD_HAS_BEEN_SENT' => 'Your password has been sent, please check your emails.',
-'LBL_NO_MAIL_ADDRESS' => 'No email address has been entered.',
-'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Email address not found',
-'LBL_LOGIN_REVOKED' => 'Account access has been blocked',
-'LBL_MAIL_COULDNOT_SENT' => 'Email could not be sent, contact your administrator to solve the configuration problem in your mailbox.',
+'LBL_SEND_PASSWORD' => 'Отправить',
+'LBL_PASSWORD_HAS_BEEN_SENT' => 'Пароль отправлен на указанный адрес электронной почты',
+'LBL_NO_MAIL_ADDRESS' => 'Введите адрес электронной почты',
+'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Нет такого адреса электронной почты',
+'LBL_LOGIN_REVOKED' => 'Доступ заблокирован',
+'LBL_MAIL_COULDNOT_SENT' => 'Письмо не может быть отправлено, обратитесь к Вашему системному администратору.',
 
 
 //List
