@@ -88,23 +88,6 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		$(function(){ $('#forgotpanel').hide(); })
-		var selectCountry = $('.lang-select :selected').text();
-		updateCountryImage(selectCountry);	
-
-		$('.lang-select').change(function(e) {
-			var selectCountry = $('.lang-select :selected').text();
-			updateCountryImage(selectCountry);
-		});
-
-		function updateCountryImage(selectedCountry){
-			var languages = {'English': 'english', Polski: 'poland', Deutsch: 'deutsch', Russian: 'russia', 'Brazilian Portuguese': 'brazil'};
-			var countryIcon = languages[selectedCountry];
-			console.log(countryIcon);
-			$('.language-icon').attr('src', 'themes/default/images/'+countryIcon+'.png' );
-		}
-
-	</script>
-  
+<script src="themes/<?php echo $currtheme; ?>/assets/js/login.js"></script> 
 <?php require_once("themes/default/footer.php"); ?>
+
