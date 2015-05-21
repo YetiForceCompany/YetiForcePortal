@@ -34,6 +34,7 @@ $app_strings = Array(
 'LBL_LNK_HOME'=>'Principal',
 'LBL_START' => 'INICIAR',
 'LBL_FORGOT_PASSWORD' => 'Esqueceu sua Senha?',
+'LBL_SELECT_LANGUAGE' => 'Selecionar Idioma',
 
 //Changing the password
 'LBL_LOGIN'=>'Acesso',
@@ -117,6 +118,8 @@ $app_strings = Array(
 'LBL_UPLOAD_FILE_LARGE'=>'O arquivo para transferência é muito grande',
 'LBL_PROBLEM_UPLOAD'=>'Erro ao enviar o arquivo',
 'LBL_FILE_HAS_NO_CONTENTS'=>'O arquivo não possui conteúdo',
+'LBL_ADD_ATTACHMENT' => 'Adicionar anexo',
+'LBL_COMMENT_AREA' => 'Área de comentário',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Chamados Abertos',
