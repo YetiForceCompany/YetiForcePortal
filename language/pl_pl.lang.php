@@ -42,7 +42,7 @@ $app_strings = Array(
 'LBL_NEW_PASSWORD'=>'Nowe hasło',
 'LBL_CONFIRM_PASSWORD'=>'Potwierdź hasło',
 'LBL_INVALID_USERNAME_OR_PASSWORD' => 'Nieprawidłowe hasło lub nazwa użytkownika.',
-'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Wprowadzone hasłą nie są identyczne',
+'LBL_ENTER_NEW_PASSWORDS_SAME' => 'Wprowadzone hasła nie są identyczne',
 'LBL_PASSWORD_CHANGED'=>'Hasło zostało zmienione.',
 
 //forgot the password
@@ -51,7 +51,7 @@ $app_strings = Array(
 'LBL_NO_MAIL_ADDRESS' => 'Nie wprowadzono adresu e-mail',
 'LBL_EMAIL_ADDRESS_NOT_FOUND' => 'Nie znaleziono adresu e-mail',
 'LBL_LOGIN_REVOKED' => 'Dostęp do konta został zablokowany',
-'LBL_MAIL_COULDNOT_SENT' => 'Wiadomość e mail nie mogła zostać wysłana, zgłoś administratorowi, że jest problem z konfiguracją poczty.',
+'LBL_MAIL_COULDNOT_SENT' => 'Wiadomość e-mail nie mogła zostać wysłana, zgłoś administratorowi, że jest problem z konfiguracją poczty.',
 
 //List
 'LBL_NO_RECORDS_FOUND' => 'Nie znaleziono rekordów w module',
@@ -101,7 +101,7 @@ $app_strings = Array(
 'LBL_HELPDESK_DOWNLOAD_ATTACHMENTS'=>'Pobierz',
 
 'LBL_PROJECT_RELATED_TICKETS'=>'Powiązane zgłoszenia', 
-'LBL_PROJECT_RELATED_PROJECTTASK'=>'Powiązane zdadania projektu',
+'LBL_PROJECT_RELATED_PROJECTTASK'=>'Powiązane zadania projektu',
 'LBL_PROJECT_RELATED_PROJECTMILESTONE'=>'Powiązane etapy projektu',
 
 'LBL_INVENTORY_PRODUCTS'=>'Produkty i usługi',
