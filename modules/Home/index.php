@@ -13,6 +13,7 @@ class Home extends BaseModule{
 	public function get_list(){
 		$params = Array('id'=>$_SESSION["loggeduser"]['id'], 'type'=> $GLOBALS["summary_widgets"]);
 		$result = $GLOBALS["sclient"]->call('get_summary_widgets', $params);
+		//echo '<h2>request</h2><pre>' . htmlspecialchars($GLOBALS["sclient"]->response, ENT_QUOTES) . '</pre>';
 		$data['widgets'] = ($result!=false && $result[0]!='')?$result[0]:array();
 		Template::display($this->module,$data,'index');
 	}

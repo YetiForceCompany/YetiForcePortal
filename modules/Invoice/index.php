@@ -21,7 +21,7 @@ class Invoice extends BaseModule{
 		);
 			
 		$lmod = $GLOBALS["sclient"]->call('get_invoice_detail', $sparams);
-		
+		//echo '<h2>request</h2><pre>' . htmlspecialchars($GLOBALS["sclient"]->response, ENT_QUOTES) . '</pre>';
 		
 		foreach($lmod[0][$this->module] as $ticketfield) {	
 			$fieldlabel = $ticketfield['fieldlabel'];

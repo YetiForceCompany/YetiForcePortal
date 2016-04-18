@@ -24,6 +24,7 @@ class Services extends BaseModule{
 		);
 		
 		$lmod = $GLOBALS["sclient"]->call('get_service_list_values', $sparams);
+		//echo '<h2>request</h2><pre>' . htmlspecialchars($GLOBALS["sclient"]->response, ENT_QUOTES) . '</pre>';
 		if(isset($lmod) && count($lmod)>0 && $lmod!=""){
 		
 			$tablenames[0]="LBL_SERVICES_RELATED_SERVICES";
