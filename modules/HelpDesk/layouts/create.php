@@ -26,7 +26,7 @@
 				<div class="panel-body" >
 			   <input type="hidden" name="module" value="HelpDesk">
 			   <input type="hidden" name="action" value="new">
-			   <input type="hidden" name="projectid" value="<?php echo $_REQUEST['projectid'] ?>" />
+			   <input type="hidden" name="projectid" value="<?php echo Functions::to_html(AppRequest::get('projectid')) ?>" />
 			   <div class="row">
 			   
 			   <div class="col-md-12">

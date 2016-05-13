@@ -9,17 +9,18 @@
  * ****************************************************************************** */
 
 //Require all files necessary for the application to start, including user settings, soap library for enstablish the connection, and the portal classes
-require_once("config/config.php");
-require_once("config/version.php");
+require_once('config/config.php');
+require_once('config/version.php');
 require_once('lib/nusoap/lib/nusoap.php');
-require_once("portal.php");
+require_once('lib/htmlpurifier/library/HTMLPurifier.auto.php');
+require_once('portal.php');
 
 // Set session path
-ini_set('session.save_path','sessions');
+ini_set('session.save_path', 'sessions');
 
 //Establish the connection with the crm and store it in a global variable
 global $sclient;
-$sclient = new soapclient2($vtiger_path."/api.php?service=yetiportal");
+$sclient = new soapclient2($vtiger_path . '/api.php?service=yetiportal');
 $sclient->soap_defencoding = $default_charset;
 
 session_start();

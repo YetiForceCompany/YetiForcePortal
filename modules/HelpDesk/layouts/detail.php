@@ -70,7 +70,7 @@
 					<table class="table">
 						<?php 
 						if(isset($data['attachments']) && count($data['attachments'])>0 && $data['attachments']!="") foreach($data['attachments'] as $cat){
-							echo '<tr><td><h5>'.ltrim($cat['filename'],$_REQUEST['id'].'_').'</h5></td><td><a class="btn btn-success btn-sm"  href="index.php?downloadfile=true&fileid='.$cat['fileid'].'&filename='.$cat['filename'].'&filetype='.$cat['filetype'].'&filesize='.$cat['filesize'].'&id='.$_REQUEST['id'].'">'.Language::translate("LBL_HELPDESK_DOWNLOAD_ATTACHMENTS").'</a></td></tr>';
+							echo '<tr><td><h5>'.ltrim($cat['filename'],AppRequest::get('id').'_').'</h5></td><td><a class="btn btn-success btn-sm"  href="index.php?downloadfile=true&fileid='.$cat['fileid'].'&filename='.$cat['filename'].'&filetype='.$cat['filetype'].'&filesize='.$cat['filesize'].'&id='.AppRequest::get('id').'">'.Language::translate("LBL_HELPDESK_DOWNLOAD_ATTACHMENTS").'</a></td></tr>';
 						}
 						?>
 					</table>
