@@ -51,8 +51,12 @@
 									</span>
 									<div class="styled-select">
 										<select class="form-control input-lg lang-select" title="<?php echo Language::translate("LBL_SELECT_LANGUAGE"); ?>" name="lang" required>
-											<?php foreach($GLOBALS['languages'] as $file => $lang) 
+											<?php foreach($GLOBALS['languages'] as $file => $lang)
+												if($file == $GLOBALS['default_language'])
+													echo '<option value="'.$file.'" selected>'.$lang.'</option>';
+												else{
 													echo '<option value="'.$file.'">'.$lang.'</option>';
+												}
 											?>
 										</select>
 									</div>
