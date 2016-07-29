@@ -21,7 +21,7 @@ $app_strings = Array(
 'LBL_BTN_LNK_LOGOUT'=>'Abmelden',
 'LBL_BTN_CHANGE_PASSWORD'=>'Passwort ändern',
 'LBL_HOME'=>'Zusammenfassung von Modulen',
-'LBL_DASHBOARD'=>'Armaturenbrett',
+'LBL_DASHBOARD'=>'Dashboard',
 
 //Login
 'LBL_SIGN_IN_TITLE'=>'Anmeldung',
@@ -33,7 +33,7 @@ $app_strings = Array(
 'LBL_EMAIL'=>'E-Mail',
 'LBL_LNK_HOME'=>'Startseite',
 'LBL_FORGOT_PASSWORD' => 'Passwort vergessen?',
-'LBL_SELECT_LANGUAGE' => 'Select language',
+'LBL_SELECT_LANGUAGE' => 'Sprache wählen',
 
 //Changing the password
 'LBL_CHANGING_PASSWORD' => 'Passwort ändern',
@@ -57,8 +57,8 @@ $app_strings = Array(
 'LBL_NO_RECORDS_FOUND' => 'Keine Datensätze in diesem Modul gefunden',
 'LBL_NO_HELPDESK_RECORDS_FOUND' => 'Keine Tickets gefunden',
 'LBL_NEW_TICKET'=>'Ticket hinzufügen',
-'LBL_NEW_TICKET_TITLE'=>'Neuer Ticket Titel',
-'LBL_TICKET_DETAIL'=>'Ticket Details',
+'LBL_NEW_TICKET_TITLE'=>'Neue Ticketbezeichnung',
+'LBL_TICKET_DETAIL'=>'Ticketdetails',
 'LBL_HELPDESK_TITLE'=>'Titel',
 'LBL_HELPDESK_TITLE_HOLDER'=>'Ticket Titel eingeben',
 'LBL_HELPDESK_SEVERITY'=>'Schwierigkeitsgrad',
@@ -116,7 +116,7 @@ $app_strings = Array(
 'LBL_PROBLEM_UPLOAD'=>'Fehler beim Senden der Datei',
 'LBL_FILE_HAS_NO_CONTENTS'=>'Datei hat keinen Inhalt',
 'LBL_ADD_ATTACHMENT' => 'Anhang hinzufügen',
-'LBL_COMMENT_AREA' => 'Platz für Komentare',
+'LBL_COMMENT_AREA' => 'Platz für Kommentare',
 
 //Widgets
 'LBL_WIDGET_OPENTICKETS' => 'Offene Tickets',
