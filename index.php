@@ -20,8 +20,9 @@ ini_set('session.save_path', 'sessions');
 
 //Establish the connection with the crm and store it in a global variable
 global $sclient;
-$sclient = new soapclient2($vtiger_path . '/api.php?service=yetiportal');
+$sclient = new nusoap_client($vtiger_path . '/api.php?service=yetiportal');
 $sclient->soap_defencoding = $default_charset;
+$sclient->decode_utf8 = false;
 
 session_start();
 
