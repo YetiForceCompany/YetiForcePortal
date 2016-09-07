@@ -75,3 +75,6 @@ html, #wrapper{
 #changePassModalLabel{
 	font-size: 22px;
 }
+.companyLogoContainer{
+	width: 48px;
+}

@@ -17,7 +17,9 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a href="/" style="float: left;"><img alt="<?php echo Language::translate("LBL_NAVBAR_TITLE"); ?>" title="<?php echo Language::translate("LBL_NAVBAR_TITLE"); ?>" width="169" height="49" src="themes/default/images/logo.png"></a>
+		<div class="companyLogoContainer">
+				<a href="/" style="float: left;"><img class="img-responsive" alt="<?php echo Language::translate("LBL_NAVBAR_TITLE"); ?>" title="<?php echo Language::translate("LBL_NAVBAR_TITLE"); ?>"  src="themes/default/images/logo.png"></a>
+		</div>
 	</div>
 	<!-- /.navbar-header -->
 	<ul class="nav navbar-top-links navbar-right">
