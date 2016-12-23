@@ -31,37 +31,7 @@
 		</div>
 	</div>
 	<?php endforeach;  ?>
-	<div class="col-lg-12">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<?php echo Language::translate("LBL_PROJECT_RELATED_TICKETS"); ?>
-				<div class="input-group pull-right">
-					<a href="index.php?module=HelpDesk&action=new&projectid=<?php echo $data['recordid']; ?>" class="btn btn-warning btn-sm pull-right"><?php echo Language::translate("LBL_NEW_TICKET"); ?></a>
-				</div>
-				<div class="clearfix"></div>
-			</div>   
-			<?php if(isset($data['relatedticketlist']) && count($data['relatedticketlist'])>0 && $data['relatedticketlist']!=""): ?>  
-				<div class="table-responsive">
-					<table class="table table-striped table-bordered table-hover dataTablesContainer" >
-						<thead>
-							<tr>
-							<?php foreach($data['relatedtickettableheader'] as $hf) echo "<th>".$hf['fielddata']."</th>"; ?>
-							</tr>
-						</thead>
-						<tbody>
-							<?php 
-							foreach($data['relatedticketlist'] as $record){
-								echo "<tr>";
-								foreach($record as $record_fields) echo "<td>".$record_fields['fielddata']."</td>";
-								echo "</tr>";
-							}
-							?>
-						</tbody>
-					</table>
-				</div>
-		  <?php endif; ?>
-		</div>
-	</div>
+
 	<?php if(isset($data['relatedtaskslist']) && count($data['relatedtaskslist'])>0 && $data['relatedtaskslist']!=""): ?>  
 	<div class="col-lg-12">
 		<div class="panel panel-default">

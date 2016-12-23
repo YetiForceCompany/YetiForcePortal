@@ -143,7 +143,6 @@ class HelpDesk extends BaseModule
 			$severity = AppRequest::get('severity');
 			$category = AppRequest::get('category');
 			$serviceid = AppRequest::get('serviceid');
-			$projectid = AppRequest::get('projectid');
 			$this->module = AppRequest::get('module');
 			$productid = AppRequest::get('productidf');
 			$ticket['productid'] = AppRequest::get('productidf');
@@ -166,7 +165,6 @@ class HelpDesk extends BaseModule
 					'module' => "$this->module",
 					'assigned_to' => "$Ticket_Assigned_to",
 					'serviceid' => "$serviceid",
-					'projectid' => "$projectid"
 			));
 
 			$record_result = $GLOBALS["sclient"]->call('create_ticket', $params);
