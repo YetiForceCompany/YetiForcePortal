@@ -144,7 +144,7 @@ class HelpDesk extends BaseModule
 			$category = AppRequest::get('category');
 			$serviceid = AppRequest::get('serviceid');
 			$projectid = AppRequest::get('projectid');
-			$this->module = AppRequest::get('ticket_module');
+			$this->module = AppRequest::get('module');
 			$productid = AppRequest::get('productidf');
 			$ticket['productid'] = AppRequest::get('productidf');
 			$ticket['owner'] = $_SESSION["loggeduser"]['user_name'];
