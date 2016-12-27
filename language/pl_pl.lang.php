@@ -67,7 +67,7 @@ $app_strings = Array(
 'LBL_HELPDESK_PRIORITY'=>'Priorytet',
 'LBL_HELPDESK_DESCRIPTION'=>'Opis',
 
-'LBL_FAQ_CATEGORIES'=>'Kalegorie',
+'LBL_FAQ_CATEGORIES'=>'Kategorie',
 'LBL_NO_FAQ_RECORDS_FOUND' => 'Nie znaleziono instrukcji',
 'LBL_FAQ_ANSWER'=>'Odpowiedź',
 'LBL_FAQ_RELATED_PRODUCT'=>'Produkt',
